@@ -529,6 +529,17 @@ button:active{
   .footer__info{
     margin-bottom: 30px;
   }
+  .slick-arrow{
+    display: none;
+    width: 0;
+    height: 0;
+    background: none;
+    font-size: 0;
+  }
+  .slick-list{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 @media (max-width: 1500px){
@@ -538,15 +549,5 @@ button:active{
   .footer__inner{
     flex-wrap: wrap;
     gap: 30px;
-  }
-}
-
-@media (max-width: 450px){
-  .slick-arrow{
-    display: none;
-  }
-  .slick-list{
-    padding-left: 30px;
-    padding-right: 30px;
   }
 }

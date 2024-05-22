@@ -25,10 +25,6 @@ a{
   transition: all .2s ease;
 }
 
-a:hover{
-  opacity: 0.5;
-}
-
 /* Button */
 
 button,
@@ -51,19 +47,31 @@ button:active{
   color: var(--btnYellow);
   border: 3px solid var(--btnYellow);
 }
-.btn__stroke:hover{
-  background-color: var(--btnYellow);
-  color: #000;
-}
 .btn__fill{
   background-color: var(--btnYellow);
   border: 3px solid var(--btnYellow);
   color: #000;
 }
-.btn__fill:hover{
-  color: var(--btnYellow);
-  border: 3px solid var(--btnYellow);
-  background: none;
+
+@media (hover: hover){
+  a:hover{
+    opacity: 0.5;
+  }
+  .btn__stroke:hover{
+    background-color: var(--btnYellow);
+    color: #000;
+  }
+  .btn__fill:hover{
+    color: var(--btnYellow);
+    border: 3px solid var(--btnYellow);
+    background: none;
+  }
+  .single-slider .slick-arrow:hover{
+    background: var(--btnYellow);
+  }
+  .single-slider .slick-arrow:hover svg path{
+    fill: #000;
+  }
 }
 
 /* Header, Hero */
@@ -176,12 +184,6 @@ button:active{
   height: 60px;
   border: 3px solid var(--btnYellow);
   border-radius: 14px;
-}
-.single-slider .slick-arrow:hover{
-  background: var(--btnYellow);
-}
-.single-slider .slick-arrow:hover svg path{
-  fill: #000;
 }
 .slick-next{
   margin-left: 15px;
@@ -434,6 +436,9 @@ button:active{
   position: absolute;
   right: 20px;
   top: 20px; 
+}
+.burger__tel{
+  margin-top: 20px;
 }
 
 .burger__menu-show{

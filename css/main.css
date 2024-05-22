@@ -545,6 +545,9 @@ button:active{
     padding-left: 30px;
     padding-right: 30px;
   }
+  .single{
+    padding: 30px 0;
+  }
 }
 
 @media (max-width: 1500px){
